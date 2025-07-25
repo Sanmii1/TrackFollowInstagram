@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body class="font-[Poppins]">
+    <p class="text-center mt">Made By Sanmi</p>
+    <form class="flex flex-col w-[350px] mx-auto rounded-[10px] h-[200px] rounded-md border-2 mt-10">
+      <label for="FileFollowers" class="p-2">Masukkan File Followers</label>
+      <input
+        type="file"
+        name=""
+        id="FileFollowers"
+        accept=".json"
+        class="file:mr-4 file:rounded-full file:border-0 file:bg-cyan-500 file:px-4 file:py-2 file:text-sm file:font-semibold file:text-violet-700 hover:file:bg-cyan-100 dark:file:bg-cyan-500 dark:file:text-violet-100 dark:hover:file:bg-cyan-500 p-2"
+      />
+      <label for="FileFollowing" class="p-2">Masukkan File Following</label>
+      <input
+        type="file"
+        name=""
+        id="FileFollowing"
+        accept=".json"
+        class="file:mr-4 file:rounded-full file:border-0 file:bg-cyan-500 file:px-4 file:py-2 file:text-sm file:font-semibold file:text-violet-700 hover:file:bg-cyan-100 dark:file:bg-cyan-500 dark:file:text-violet-100 dark:hover:file:bg-cyan-500 p-2"
+      />
+    </form>
+    <div class="flex flex-col mx-auto max-w-[350px] rounded-md border-2 mt-3 px-2 py-2" id="result">
+      <h1 class="text-center">List Yang Tidak Follow</h1>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
